@@ -1,0 +1,117 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import "variables";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=latin-ext";
+/*@import:;*/
+
+.circulo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	background: $Starnormal;
+	@extend .sombras-fondo;
+}
+.sombras-fondo{
+	-webkit-box-shadow: 0px 2px 68px -1px rgba(135,135,135,1);
+	-moz-box-shadow: 0px 2px 68px -1px rgba(135,135,135,1);
+	box-shadow: 0px 2px 68px -1px rgba(135,135,135,1);	
+}
+section{
+	width: $Ancho;
+	height: $Alto;
+	margin:auto;
+	@extend .sombras-fondo;
+	
+	& article.imagen{
+		height: 450px;
+		background-image:url('../img/sushi.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	& article span.ion-ios-heart-outline{
+		text-align: center;
+		color: $ColorIcon;
+		padding:15px;
+		font-size: 45px;
+		float: right;
+		margin: -50px 35px;
+		@extend .circulo;
+	}
+	& article h2{
+		display: inline-block;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 40px;
+	    font-weight: 300;
+	    letter-spacing: 4px;
+	    text-transform: uppercase;
+	    color: gray;
+	    text-align: left;
+	    margin: 20px 15px 0px 20px;
+	}
+	& article span{
+		display: inline-block;
+	    text-align: left;
+	    color: darkgray;
+	    size: 15px;
+	    margin: 20px;
+	    font-family: 'Open Sans', sans-serif;
+	    letter-spacing: 1px;
+
+	}
+	& div.stars{
+	  	display: inline-block;
+	  	font-size: 21px;
+     	margin: 10px 5px 10px 20px;
+
+		& a{
+		    display: inline-block;
+		    width: $Starsize;
+		    height: $Starsize;
+		    line-height: $Starsize;
+		    font-size: $Starsize;
+		    color: $Starnormal;
+		    text-decoration: none;
+		    text-align: center;
+		    transition: color .3s;
+		}
+		& a:hover  {
+		    color: $Starselect;
+		}  
+	}
+	& article.texto{
+		margin: 10px 20px 15px 10px;
+
+		& p{
+			display: block;
+			font-family: Open sans;
+			size:30px;
+			text-align: center;
+			margin:10px 20px 20px;
+			line-height: 35px;
+			color: lightgray;
+		}
+	}
+	& article.boton{
+		display: flex;
+	    align-content: space-around;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+
+		& a.goGO{
+			align-self: center;
+			padding: 15px 15;
+			text-align: center;
+			background: #ED6A5A;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+		    letter-spacing: 1px;
+		    text-decoration: none;
+		    border-radius: 5%;
+		    @extend .sombras-fondo;
+		}
+	}
+
+}
+

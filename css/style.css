@@ -1,0 +1,94 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=latin-ext";
+/*@import:;*/
+.circulo, section article span.ion-ios-heart-outline {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #FFE88C; }
+
+.sombras-fondo, .circulo, section article span.ion-ios-heart-outline, section, section article.boton a.goGO {
+  -webkit-box-shadow: 0px 2px 68px -1px #878787;
+  -moz-box-shadow: 0px 2px 68px -1px #878787;
+  box-shadow: 0px 2px 68px -1px #878787; }
+
+section {
+  width: 600px;
+  height: 800px;
+  margin: auto; }
+  section article.imagen {
+    height: 450px;
+    background-image: url("../img/sushi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  section article span.ion-ios-heart-outline {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 45px;
+    float: right;
+    margin: -50px 35px; }
+  section article h2 {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: gray;
+    text-align: left;
+    margin: 20px 15px 0px 20px; }
+  section article span {
+    display: inline-block;
+    text-align: left;
+    color: darkgray;
+    size: 15px;
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px; }
+  section div.stars {
+    display: inline-block;
+    font-size: 21px;
+    margin: 10px 5px 10px 20px; }
+    section div.stars a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      color: #FFE88C;
+      text-decoration: none;
+      text-align: center;
+      transition: color .3s; }
+    section div.stars a:hover {
+      color: #F39C12; }
+  section article.texto {
+    margin: 10px 20px 15px 10px; }
+    section article.texto p {
+      display: block;
+      font-family: Open sans;
+      size: 30px;
+      text-align: center;
+      margin: 10px 20px 20px;
+      line-height: 35px;
+      color: lightgray; }
+  section article.boton {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    section article.boton a.goGO {
+      align-self: center;
+      padding: 15px 15;
+      text-align: center;
+      background: #ED6A5A;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border-radius: 5%; }
+
+/*# sourceMappingURL=style.css.map */
